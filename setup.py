@@ -35,6 +35,7 @@ setup(
     zip_safe=False,
     install_requires=[
         'fanstatic',
+        'js.angular',
         'setuptools',
         ],
     entry_points={

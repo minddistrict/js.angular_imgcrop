@@ -1,7 +1,15 @@
-from fanstatic import Library, Resource
+from fanstatic import Library, Resource, Group
+import js.angular
 
 library = Library('ngimgcrop', 'resources')
 
-# Define the resources in the library like this.
-# For options and examples, see the fanstatic documentation.
-# resource1 = Resource(library, 'style.css')
+imgcrop_css = Resource(
+    library, 'ng-img-crop.css',
+    minified='ng-img-crop.min.css')
+
+imgcrop_js = Resource(
+    library, 'ng-img-crop.js',
+    minified='ng-img-crop.min.js',
+    depends=[js.angular.angular])
+
+imgcrop = Group([imgcrop_css, imgcrop_js])
