@@ -1,6 +1,9 @@
 CHANGES
 *******
 
+- CB-569 fix issue where "Take Photo" in portrait mode results in canvas without height.
+
+
 0.3.3 (unreleased)
 ==================
 
