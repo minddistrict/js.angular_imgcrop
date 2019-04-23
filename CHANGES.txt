@@ -4,7 +4,9 @@ CHANGES
 0.3.3 (unreleased)
 ==================
 
-- Nothing changed yet.
+- Fix issue where "Take Photo" in portrait mode results in canvas without height.
+
+- *Upstream is no longer maintenained.*
 
 
 0.3.2 (2015-04-15)
