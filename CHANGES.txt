@@ -4,7 +4,7 @@ CHANGES
 0.3.4 (unreleased)
 ==================
 
-- Nothing changed yet.
+- Update to https://github.com/CrackerakiUA/ngImgCropFullExtended/ - supports rectangle with aspect ratio
 
 
 0.3.3 (2019-04-23)
