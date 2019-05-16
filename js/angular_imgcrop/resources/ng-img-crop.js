@@ -2,10 +2,10 @@
  * ngImgCropExtended v0.6.2
  * http://crackerakiua.github.io/ngImgCropFullExtended/
  *
- * Copyright (c) 2016 Alex Kaul
+ * Copyright (c) 2019 Alex Kaul
  * License: MIT
  *
- * Generated at Thursday, October 20th, 2016, 3:43:09 PM
+ * Generated at Thursday, May 16th, 2019, 12:33:08 PM
  */
 (function() {
 var crop = angular.module('ngImgCrop', []);
@@ -2447,6 +2447,11 @@ crop.factory('cropHost', ['$document', '$q', 'cropAreaCircle', 'cropAreaSquare',
                         resultHeight = ris.h;
                         resultWidth = resultHeight * aspectRatio;
                     }
+
+                    // patched in to prevent white bars
+                    // https://github.com/CrackerakiUA/ngImgCropFullExtended/issues/21
+                    temp_canvas.width = resultWidth;
+                    temp_canvas.height = resultHeight;
 
                     temp_ctx.drawImage(image,
                         x,
