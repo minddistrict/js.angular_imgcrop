@@ -4,8 +4,7 @@ CHANGES
 0.3.5 (unreleased)
 ==================
 
-- Nothing changed yet.
-
+- Patch issue about square cropping.
 
 0.3.4 (2019-07-03)
 ==================
